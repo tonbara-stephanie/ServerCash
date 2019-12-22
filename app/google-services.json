@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "723210659707",
+    "firebase_url": "https://server-cashout.firebaseio.com",
+    "project_id": "server-cashout",
+    "storage_bucket": "server-cashout.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723210659707:android:9c056892a20f05d1a2ffde",
+        "android_client_info": {
+          "package_name": "com.example.servercashout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723210659707-i27phu8g13r77rd6c2p2lqgpni55ipe4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.servercashout",
+            "certificate_hash": "600ea5318b49c46dc70f25de242d42c6d0311426"
+          }
+        },
+        {
+          "client_id": "723210659707-f4so8djvdonkt33fdsuocnb2s6mpd56m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJiZ6ux0S5GbsyiPSvW8eF6tmOFPp0zfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723210659707-f4so8djvdonkt33fdsuocnb2s6mpd56m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

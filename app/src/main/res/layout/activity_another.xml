@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AnotherActivity">
+
+    <!-- TODO #1: Build Expense Section-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingTop="50dp"
+        android:textColor="@color/colorButtonAccent"
+        android:text="Report"
+        android:textSize="32dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:text="2019-11-22"
+        android:gravity="center"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingTop="30dp"
+        android:textColor="@color/colorButtonAccent"
+        android:text="Take Home ($)"
+        android:gravity="center"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/takeHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingTop="30dp"
+        android:textColor="@color/colorButtonAccent"
+        android:text="Take Home (%)"
+        android:gravity="center"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/takePercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingTop="30dp"
+
+        android:textColor="@color/colorButtonAccent"
+        android:text="Cash Out ($)"
+        android:gravity="center"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/cash_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingTop="30dp"
+
+        android:textColor="@color/colorButtonAccent"
+        android:text="Tip Out ($)"
+        android:gravity="center"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/tip_out"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:text="0"
+        android:textSize="20dp"
+        android:gravity="center" android:paddingBottom="0dp"/>
+    <!--<include
+        layout="@layout/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />-->
+
+</LinearLayout>
+
+
+
+
+
+
+
