@@ -82,10 +82,14 @@ class MainActivity : AppCompatActivity() {
             if(cash_on_hand.isEmpty()){
                 cashOnHand.error= "Please Enter Cash in Hand"
             }
+
+            //Only works when input fields are not empty
             if(!gross_receipts.isEmpty()&& !cash_due.isEmpty()&&!cash_on_hand.isEmpty()){
 
                 if(cash_compute>=0) {
 
+
+                    //Calculatin output values
                     takeHome = hand_compute - cash_compute
                     takeHomePercentage=(takeHome/gross_compute)*100
                     val takeHomeDec = dec.format(takeHome)
@@ -97,13 +101,20 @@ class MainActivity : AppCompatActivity() {
                     takeHomePercentageString=takeHomePercentage.toString()
                     tipOutString=tipOut.toString()
                     cash_compute_string=cash_compute.toString()
+
+                    //creating intent to launch another Activity
                     val intent = Intent(this@MainActivity, AnotherActivity::class.java)
+
+
+                    //Preparing values to export to new activity
                     intent.putExtra("takeHome", takeHomeDec)
                     intent.putExtra("takeHomePercentage", takeHomePercentageDec)
                     intent.putExtra("tipOut", tipOutDec)
                     intent.putExtra("cash_compute", cash_compute_dec)
                     startActivity(intent)
 
+
+                    //Calls saveTIP() to Save
                     saveTip(takeHomeString,takeHomePercentageString,tipOutString,cash_compute_string)
                 }
                 else if(cash_compute<0){
@@ -122,13 +133,20 @@ class MainActivity : AppCompatActivity() {
                     takeHomePercentageString=takeHomePercentage.toString()
                     tipOutString=tipOut.toString()
                     cash_compute_string=cash_compute.toString()
+
+                    //creating intent to launch another Activity
                     val intent = Intent(this@MainActivity, AnotherActivity::class.java)
+
+
+
+                    //Preparing values to export to new activity
                     intent.putExtra("takeHome", takeHomeDec)
                     intent.putExtra("takeHomePercentage", takeHomePercentageDec)
                     intent.putExtra("tipOut", tipOutDec)
                     intent.putExtra("cash_compute", cash_compute_dec)
                     startActivity(intent)
 
+                    //Calls saveTIP() to Save data on Firebase
                     saveTip(takeHomeString,takeHomePercentageString,tipOutString,cash_compute_string)
                 }
 
@@ -141,6 +159,7 @@ class MainActivity : AppCompatActivity() {
     private fun saveTip(takeHomeString:String,takeHomePercentageString:String,tipOutString:String,cash_compute_string:String){
 
 
+        //Method that adds value to database
         val database = FirebaseDatabase.getInstance()
         val ref = database.getReference("tips")
         var tipId=ref.push().key
